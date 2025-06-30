@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu0&icon_names=close" />
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <p><a href="#">LM10</a></p>
+        </div>
+        <ul class="sidebar">
+            <li><a href="#" onclick="hideSidebar()"><span class="material-symbols-outlined">close</span></a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Forum</a></li>
+            <li><a href="#">Log In</a></li>
+        </ul>
+        <ul class="navbar">
+            <li class="hide"><a href="#">Home</a></li>
+            <li class="hide"><a href="#">About Us</a></li>
+            <li class="hide"><a href="#">Products</a></li>
+            <li class="hide"><a href="#">Blog</a></li>
+            <li class="hide"><a href="#">Forum</a></li>
+            <li class="hide"><a href="#">Log In</a></li>
+            <li id="drop"><a href="#" onclick="showSidebar()"><span class="material-symbols-outlined">menu</span></a></li>
+        </ul>
+    </nav>
+</body>
+<script src="script.js"></script>
+</html>
