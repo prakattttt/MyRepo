@@ -7,18 +7,15 @@
 }
 
 body{
-    background-image: url();
-    background-size: cover;
     font-family: "Quicksand", sans-serif;
 }
 nav{
-    background-color: #FFFDF2;
-    color: #000;
+    background: linear-gradient(to right, #004d98 0%, #a8133e 50%, #004d98 100%);
+    color: #edbb00;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     display: flex;
     justify-content: center;    
     align-items: center;
-
 }
 
 nav .logo p {
@@ -30,7 +27,7 @@ nav .logo p {
 
 nav .logo p a {
     text-decoration: none;
-    color: #000;
+    color: #edbb00;
 }
 
 nav ul{
@@ -48,14 +45,14 @@ nav ul li{
 nav ul li a{
     height: 100%;
     text-decoration: none;
-    color: #000;
+    color: #edbb00;
     display: flex;
     align-items: center;
     padding: 0 1.6em;
 }
 
 nav ul li a:hover{
-    background-color: #f0f0f0;
+    font-weight: bolder;
 }
 
 #drop{
@@ -69,7 +66,6 @@ nav ul li a:hover{
     width: 250px;
     height: 100vh;
     z-index: 1000;
-    background-color: #fffdf200;
     backdrop-filter: blur(10px);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     display: none;
@@ -82,7 +78,64 @@ nav ul li a:hover{
     width: 100%;
 }
 
-@media (max-width: 745px) {
+#main-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.left-text{
+    margin: 4em 2em 4em 6em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left-text h1{
+    margin: 0.3em 0;
+    font-size: 4rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+.left-text p{
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+.left-text h2{
+    font-size: 2rem;
+    font-weight: 600;
+     margin: 1em 0;
+}
+
+.btn {
+    margin: 0.6em;
+    background: linear-gradient(to right, #004d98 0%, #a8133e 50%, #004d98 100%);
+    color: #edbb00;
+    border: none;
+    padding: 0.8em 1.5em;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background 0.3s ease-in-out;
+}
+
+.btn span {
+    position: relative;
+    top: 4px;
+    right: 4px;
+}
+
+.btn:hover {
+    font-weight: 700;
+}
+
+#messi-image{
+    height: 92.9vh;
+}
+
+@media (max-width: 890px) {
     #drop {
         display: inline;
     }
