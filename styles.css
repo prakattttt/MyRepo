@@ -8,6 +8,7 @@
 
 body{
     font-family: "Quicksand", sans-serif;
+    max-height: 100vh;
 }
 nav{
     background: linear-gradient(to right, #004d98 0%, #a8133e 50%, #004d98 100%);
@@ -60,6 +61,7 @@ nav ul li a:hover{
 }
 
 .sidebar {
+    background: linear-gradient(135deg, #004c98c0 0%, #a8133dc0 50%, #004c98c0 100%);
     position: fixed;
     top: 0;
     right: 0;
@@ -107,12 +109,12 @@ nav ul li a:hover{
     font-size: 2rem;
     font-weight: 600;
      margin: 1em 0;
+     text-align: center;
 }
 
 .btn {
     margin: 0.6em;
     background: linear-gradient(to right, #004d98 0%, #a8133e 50%, #004d98 100%);
-    color: #edbb00;
     border: none;
     padding: 0.8em 1.5em;
     border-radius: 30px;
@@ -121,21 +123,57 @@ nav ul li a:hover{
     transition: background 0.3s ease-in-out;
 }
 
-.btn span {
+.btn a{
+    text-decoration: none;
+    color: #edbb00;
+}
+
+.btn .material-symbols-outlined {
     position: relative;
     top: 4px;
     right: 4px;
 }
 
+
 .btn:hover {
-    font-weight: 700;
+    background: #edbb00;
+    scale: 1.05;
+}
+
+.btn:hover a {
+  background-image: linear-gradient(to right, #004d98 0%, #a8133e 50%, #004d98 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 #messi-image{
     height: 92.9vh;
 }
 
-@media (max-width: 890px) {
+@media (max-width: 1150px) {
+    .left-text{
+    margin: 4em 1em 2em 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .left-text h1{
+        font-size: 2.5rem;
+    }
+    .left-text p{
+    font-size: 1rem;
+    }
+    .left-text h2{
+    font-size: 1.5rem;
+    margin: 0.3em;
+    }
+    #messi-image{
+    height: 82vh;
+    }
+}
+
+@media (max-width: 900px) {
     #drop {
         display: inline;
     }
@@ -153,5 +191,15 @@ nav ul li a:hover{
         height: 50px;
         justify-content: flex-start;
     }
-
+    #main-header {
+        flex-direction: column-reverse;
+        align-items: center;
+    }   
+    .left-text{
+       margin-top: 1em;
+    }
+    #messi-image{
+    height: 50vh;
+    }
 }
+
