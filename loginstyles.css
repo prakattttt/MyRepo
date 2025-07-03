@@ -1,0 +1,13 @@
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background-color: #e3e3e3;
+}
+
+.container{
+    position: relative;
+    width:900px;
+    height: 600px;
+}
