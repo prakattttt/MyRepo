@@ -1,13 +1,204 @@
+body {
+    min-height: 100vh;
+    background-color: #e3e3e3;
+}
+
 .form{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 80vh;
-    background-color: #e3e3e3;
 }
 
 .container{
     position: relative;
-    width:900px;
-    height: 600px;
+    top: 6.5vh;
+    width:60vw;
+    height: 80vh;
+    background: #e3e3e3;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    margin: auto;
+    color: #edbb00;
+    overflow: hidden;
 }
+
+
+.form-box-login{
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background:  #004d98;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    padding: 50px;
+}
+
+form{
+    width: 100%;
+}
+
+.butn {
+    margin: 0.6em;
+    background: #a8133e;
+    width: 20vw;
+    border: none;
+    padding: 0.8em 1.5em;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background 0.3s ease-in-out;
+}
+
+.butn a{
+    text-decoration: none;
+    color: #edbb00;
+}
+
+.butn:hover a {
+  background-image: linear-gradient(to right, #004d98 0%, #a8133e 50%, #004d98 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.container h1{
+    font-size: 2.5em;
+    margin: -0.3em 0;
+}
+
+.input-box{
+    position: relative;
+    margin: 1.5em 0;
+}
+
+.input-box input{
+    width: 100%;
+    padding: 13px 50px 13px 20px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    color: #000;
+    font-weight: 500;
+}
+
+.input-box input::placeholder {
+    color: #888;
+    font-weight: 400;
+}
+
+.input-box span {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+}
+
+.forgot-link{
+    margin: -15px 0 15px;
+}
+
+.forgot-link a{
+    text-decoration: none;
+    color: #edbb00;
+}
+
+.links {
+    margin: 10px;
+}
+
+.forgot-link a:hover{
+    color: blue;
+}
+
+.form-box-register{
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background:  #004d98;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    padding: 50px;
+    visibility: hidden;
+}
+
+.toggle-box{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #004d98;
+}
+
+.toggle-panel{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: #004d98;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        transition: 0.6s ease-in-out;
+}
+
+.toggle-panel.toggle-left{
+    left: 0;
+    transition-delay: 1.2s;
+}
+
+.container.active .toggle-panel.toggle-left {
+    left: -50%;
+    transition-delay: 0.6s;
+}
+
+.container.active .toggle-panel.toggle-right {
+    right: 0;
+    transition-delay: 1.2s;
+}
+
+.toggle-right {
+    right: -50%;
+    transition-delay: 0.6s;
+}
+
+.toggle-panel p{
+    margin: 1em;
+    z-index: 3;
+}
+
+.toggle-panel h1{
+    z-index: 3;
+}
+
+.toggle-panel .butn{
+    background-color: transparent;
+    box-shadow: none;
+    border: 2px solid #edbb00;
+    z-index: 3;
+}
+
+.toggle-box::before {
+    content: '';
+    position: absolute;
+    left: -250%;
+    width: 300%;
+    height: 100%;
+    background: #a8133e;
+    z-index: 2;
+    border-radius: 150px;
+    transition: 0.6s ease-in-out;
+}
+
+.container.active .toggle-box::before {
+    left: 50%;
+}
+
+
+

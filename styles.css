@@ -99,6 +99,13 @@ nav ul li a:hover{
     text-align: center;
 }
 
+.left-text h3{
+    font-size: 3rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
 .left-text p{
     font-size: 1.5rem;
     font-weight: 300;
