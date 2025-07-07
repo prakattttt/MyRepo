@@ -6,7 +6,7 @@
 
 .forum-section h1 {
     font-size: 3rem;
-    color: #004d98;
+    color: #000;
     margin-bottom: 1em;
 }
 
@@ -52,7 +52,7 @@
 
 .comment-box h2 {
     margin-bottom: 1em;
-    color: #004d98;
+    color: #000;
 }
 
 .comment-box form {

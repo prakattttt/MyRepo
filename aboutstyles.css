@@ -26,13 +26,12 @@
 }
 
 .hero-image {
-    flex: 1 1 400px;
     animation: fadeIn 2s ease-in;
 }
 
 .hero-image img {
     width: 100%;
-    max-width: 400px;
+    max-width: 800px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
@@ -64,7 +63,7 @@
 
 .detail h2 {
     font-size: 2rem;
-    color: #004d98;
+    color: #000;
     margin-bottom: 0.5em;
 }
 
@@ -101,9 +100,15 @@
 @media (max-width: 768px) {
     .about-hero {
         flex-direction: column;
+        padding: 1em;
     }
     .detail {
         flex-direction: column;
         text-align: center;
     }
+
+    .about-details {
+    padding: 1em;
+    background-color: #f9f9f9;
+}
 }
