@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Forum</title>
+    <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="forumstyles.css">
 </head>
 <body>
     <nav>
+        <!-- Same nav code -->
         <div class="logo">
-            <p>LM10</p>
+            <img src="logo.png" alt="logo" id="logo">
         </div>
         <ul class="sidebar">
             <li><a href="#" onclick="hideSidebar()"><span class="material-symbols-outlined">close</span></a></li>
@@ -28,5 +30,38 @@
             <li id="drop"><a href="#" onclick="showSidebar()"><span class="material-symbols-outlined">menu</span></a></li>
         </ul>
     </nav>
+
+    <section class="forum-section">
+        <div class="container">
+            <h1>Community Forum</h1>
+            <p>Ask questions, get help, and engage with others in the community!</p>
+            <div class="forum-posts">
+                <div class="post">
+                    <h3>How do I set up my account?</h3>
+                    <p>Posted by <strong>User123</strong> • 2 hours ago</p>
+                </div>
+                <div class="post">
+                    <h3>Feature suggestion: Dark mode toggle</h3>
+                    <p>Posted by <strong>DesignGuru</strong> • 1 day ago</p>
+                </div>
+                <div class="post">
+                    <h3>Problem with password reset</h3>
+                    <p>Posted by <strong>HelpSeeker</strong> • 3 days ago</p>
+                </div>
+            </div>
+        </div>
+    <div class="comment-box">
+        <h2>Leave a Comment</h2>
+        <form id="commentForm">
+            <input type="text" id="username" placeholder="Your Name" required />
+            <textarea id="commentText" placeholder="Write your comment..." rows="4" required></textarea>
+            <button type="submit" class="btn"> Comment </button>
+        </form>
+        <div id="commentsContainer">
+
+        </div>
+    </div>
+</section>
+    <script src="script.js"></script>
 </body>
 </html>

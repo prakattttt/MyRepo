@@ -1,31 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu0&icon_names=close0&icon_names=shopping_cart" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="aboutstyles.css" />
 </head>
 <body>
-    <nav>
-        <div class="logo">
-            <p>LM10</p>
-        </div>
-        <ul class="sidebar">
-            <li><a href="#" onclick="hideSidebar()"><span class="material-symbols-outlined">close</span></a></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="forum.html">Forum</a></li>
-            <li><a href="login.html">Log In</a></li>
-        </ul>
-        <ul class="navbar">
-            <li class="hide"><a href="index.html">Home</a></li>
-            <li class="hide"><a href="about.html">About Us</a></li>
-            <li class="hide"><a href="products.html">Products</a></li>
-            <li class="hide"><a href="forum.html">Forum</a></li>
-            <li class="hide"><a href="login.html">Log In</a></li>
-            <li id="drop"><a href="#" onclick="showSidebar()"><span class="material-symbols-outlined">menu</span></a></li>
-        </ul>
-    </nav>
+  <nav>
+    <div class="logo">
+      <img src="logo.png" alt="logo" id="logo" />
+    </div>
+    <ul class="sidebar">
+      <li><a href="#" onclick="hideSidebar()"><span class="material-symbols-outlined">close</span></a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="forum.html">Forum</a></li>
+      <li><a href="login.html">Log In</a></li>
+    </ul>
+    <ul class="navbar">
+      <li class="hide"><a href="index.html">Home</a></li>
+      <li class="hide"><a href="about.html">About Us</a></li>
+      <li class="hide"><a href="products.html">Products</a></li>
+      <li class="hide"><a href="forum.html">Forum</a></li>
+      <li class="hide"><a href="login.html">Log In</a></li>
+      <li id="drop"><a href="#" onclick="showSidebar()"><span class="material-symbols-outlined">menu</span></a></li>
+    </ul>
+  </nav>
+
+  <section class="about-hero">
+    <div class="hero-text slide-in-left">
+      <h1>About Us</h1>
+      <p>
+        We are more than a brand — we're a **community**.  
+        Our mission is to build an interactive space where innovation meets passion.
+      </p>
+    </div>
+    <div class="hero-image fade-in">
+      <img src="teamwork.png" alt="Teamwork Illustration" />
+    </div>
+  </section>
+
+  <section class="about-details">
+    <div class="detail slide-in-right">
+      <img src="mission.png" alt="Mission" />
+      <div>
+        <h2>Our Mission</h2>
+        <p>
+          Empower individuals by creating seamless experiences that connect, educate, and inspire — all in one place.
+        </p>
+      </div>
+    </div>
+    <div class="detail slide-in-left">
+      <img src="community.png" alt="Community" />
+      <div>
+        <h2>Our Community</h2>
+        <p>
+          With members from all around the globe, our platform thrives on diversity and collaboration. Together, we grow.
+        </p>
+      </div>
+    </div>
+    <div class="detail slide-in-right">
+      <img src="vision.png" alt="Vision" />
+      <div>
+        <h2>Our Vision</h2>
+        <p>
+          To be a trusted digital destination for knowledge sharing, product discovery, and meaningful interaction.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
