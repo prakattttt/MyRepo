@@ -67,10 +67,7 @@ form{
 }
 
 .butn:hover a {
-  background-image: linear-gradient(to right, #004d98 0%, #a8133e 50%, #004d98 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+    transform: scale(1.1);
 }
 
 svg {
@@ -125,7 +122,7 @@ svg {
 }
 
 .forgot-link a:hover{
-    color: blue;
+    color: #a8133e;
 }
 
 .toggle-box{
@@ -253,6 +250,9 @@ svg {
     .container.active .toggle-panel.toggle-left{
         left: 0;
         top: -30%;
+    }
+    .forgot-link a:hover{
+    color: #004d98;
     }
 }
 
