@@ -1,0 +1,29 @@
+.container .products {
+    margin: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .products img {
+    max-width: 40vw;
+    border-radius: 10px;
+}
+
+.container .products h1{
+    font-size: 3rem;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.box h2 {
+    font-size: 1.5em;
+}
+
+.boxes{
+    background-color: #f9f9f9;
+    margin: 1em;
+}
