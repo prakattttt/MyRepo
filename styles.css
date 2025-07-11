@@ -178,7 +178,7 @@ nav ul li a:hover{
     animation-delay: 0.2s;
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1230px) {
     .left-text{
     margin: 4em 1em 2em 3em;
     display: flex;
@@ -186,18 +186,18 @@ nav ul li a:hover{
     align-items: center;
     }
     .left-text h1{
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
 
     .left-text h3{
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .left-text p{
-    font-size: 1rem;
+    font-size: 1.5rem;
     }
     .left-text h2{
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin: 0.3em;
     }
     #messi-image{
@@ -205,7 +205,7 @@ nav ul li a:hover{
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1030px) {
     #drop {
         display: inline;
     }
@@ -231,7 +231,7 @@ nav ul li a:hover{
        margin-top: 1em;
     }
     #messi-image{
-    height: 50vh;
+    height: 40vh;
     }
 }
 
