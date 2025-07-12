@@ -1,7 +1,12 @@
+.txt {
+    animation: slideInLeft 1s ease-in-out;
+}
+
 .container .products {
     margin: 4em;
     display: flex;
     justify-content: space-between;
+    animation: slideInRight 1s ease-in-out;
 }
 
 .container .products img {
@@ -30,6 +35,7 @@
     gap: 40px;
     padding: 1em;
     background-color: #f9f9f9;
+    animation: fadeIn 0.5s ease-in-out;
 }
 
 
@@ -44,6 +50,7 @@
     height: 500px;
     border-radius: 10px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    position: relative;
 }
 
 .boxes {
@@ -79,8 +86,60 @@
     font-size: 1.1rem;
 }
 
-.box:hover {
+.btn {
+    background: #edbb00;
+    position: absolute;
+    top: 25%;
+    left: 27%;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    padding: 1em;
+}
+
+.box:hover .btn {
+    visibility: visible;
+    opacity: 1;
+}
+
+.btn:hover {
+    transition: scale 0.3s ease-in-out;
+}
+
+.box::after{
+   content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    border-radius: 10px;
+}
+
+.box:hover::after {
     cursor: pointer;
+    visibility: visible;
+    opacity: 1;
+}
+
+@keyframes slideInLeft {
+    0% {opacity: 0; transform: translateX(-100px);}
+    100% {opacity: 1; transform: translateX(0);}
+}
+
+@keyframes slideInRight {
+    0% {opacity: 0; transform: translateX(100px);}
+    100% {opacity: 1; transform: translateX(0);}
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 @media(max-width: 1200px) {

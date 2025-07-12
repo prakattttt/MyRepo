@@ -168,14 +168,12 @@ nav ul li a:hover{
 
 .slide {
     opacity: 0;
-    transform: translateY(-20%);
+    transform: translateY(-10%);
     animation: slideIn 1s ease-out forwards;
-    animation-delay: 0.2s;
 }
 
 .slides {
     animation: slideOut 1s ease-out backwards;
-    animation-delay: 0.2s;
 }
 
 @media (max-width: 1230px) {
@@ -238,7 +236,7 @@ nav ul li a:hover{
 @keyframes slideIn {
     0% {
         opacity: 0;
-        transform: translateY(-20%);
+        transform: translateY(-10%);
     }
     100% {
         opacity: 1;
@@ -248,7 +246,7 @@ nav ul li a:hover{
 @keyframes slideOut {
     0% {
         opacity: 0;
-        transform: translateY(20%);
+        transform: translateY(10%);
     }
     100% {
         opacity: 1;
