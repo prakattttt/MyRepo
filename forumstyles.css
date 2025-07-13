@@ -2,6 +2,7 @@
     padding: 3em 2em;
     background-color: #f9f9f9;
     text-align: center;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .forum-section h1 {
@@ -88,4 +89,9 @@
 
 .comment strong {
     color: #004d98;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }

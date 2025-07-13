@@ -20,6 +20,7 @@ body {
     margin: auto;
     color: #edbb00;
     overflow: hidden;
+    animation: fadeIn 1s ease;
 }
 
 
@@ -59,10 +60,6 @@ form{
     cursor: pointer;
     font-size: 1.2rem;
     transition: background 0.3s ease-in-out;
-}
-
-.butn a{
-    text-decoration: none;
     color: #edbb00;
 }
 
@@ -195,6 +192,11 @@ svg {
 
 .container.active .toggle-box::before {
     left: 50%;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 @media(max-width: 998px) {
