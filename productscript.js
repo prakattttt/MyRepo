@@ -10,3 +10,9 @@ allBoxes.forEach(box => {
   });
 });
 
+function alertCart(button) {
+    const productBox = button.closest('.box'); 
+    const header = productBox.querySelector('h3').textContent; 
+    alert(header + " successfully added to cart!");
+}
+

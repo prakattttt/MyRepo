@@ -6,9 +6,14 @@
     padding: 0;
 }
 
+body, html {
+    overflow-y: hidden;
+    height: 100vh;
+}
+
 body{
+    padding-top: 40px;
     font-family: "Quicksand", sans-serif;
-    max-height: 100vh;
 }
 nav{
     background: linear-gradient(to right, #004d98 0%, #a8133e 50%, #004d98 100%);
@@ -17,6 +22,10 @@ nav{
     display: flex;
     justify-content: center;    
     align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
 }
 
 nav .logo p {
@@ -155,7 +164,7 @@ nav ul li a:hover{
     scale: 1.05;
 }
 
-.btn:hover a {
+.btn:hover a, .btn:hover span {
   background-image: linear-gradient(to right, #004d98 0%, #a8133e 50%, #004d98 100%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -163,7 +172,7 @@ nav ul li a:hover{
 }
 
 #messi-image{
-    height: 92.9vh;
+    height: calc(100vh - 60px);
 }
 
 .slide {
@@ -175,6 +184,68 @@ nav ul li a:hover{
 .slides {
     animation: slideOut 1s ease-out backwards;
 }
+
+.footer {
+    background: linear-gradient(to right, #004d98 0%, #a8133e 50%, #004d98 100%);
+    color: #fff;
+    padding: 2em 1em 1em;
+    margin-top: 3em;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+    max-width: 1200px;
+    margin: auto;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #444;
+}
+
+.footer-logo img {
+    max-height: 60px;
+    margin-left: 20px;
+    padding: 6px;
+    background-color: #edbb00;
+    border-radius: 10px;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2em;
+}
+
+.footer-links a {
+    color: #edbb00;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    font-weight: 600;
+}
+
+.footer-social a {
+    color: #edbb00;
+    font-size: 1.5rem;
+    margin-right: 0.8em;
+    transition: color 0.3s;
+}
+
+.footer-social a:hover {
+    font-weight: 600;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 1em;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
 
 @media (max-width: 1230px) {
     .left-text{
@@ -203,7 +274,7 @@ nav ul li a:hover{
     }
 }
 
-@media (max-width: 1030px) {
+@media (max-width: 1375px) {
     #drop {
         display: inline;
     }
@@ -231,6 +302,17 @@ nav ul li a:hover{
     #messi-image{
     height: 40vh;
     }
+}
+
+@media (max-width: 640px) {
+    .footer-container {
+        flex-direction: column;
+    }
+
+    body, html {
+    overflow-y: scroll;
+    height: 100vh;
+}
 }
 
 @keyframes slideIn {

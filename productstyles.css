@@ -1,3 +1,7 @@
+body, html {
+    overflow-y: scroll;
+}
+
 .txt {
     animation: slideInLeft 1s ease-in-out;
 }
@@ -60,23 +64,23 @@
 }
 
 .box img {
-  width: 100%;
-  height: 350px;
-  object-fit: cover;
-  border-radius: 10px 10px 0 0;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
 }
 
 .box h3 {
-  font-size: 1.2rem;
-  margin: 0.5em 0 0.3em;
-  color: #004d98;
+    font-size: 1.2rem;
+    margin: 0.5em 0 0.3em;
+    color: #004d98;
 }
 
 .box p {
-  padding: 0 0.8em;
-  font-size: 0.95rem;
-  color: #333;
-  line-height: 1.4rem;
+    padding: 0 0.8em;
+    font-size: 0.95rem;
+    color: #333;
+    line-height: 1.4rem;
 }
 
 .box .price {
@@ -105,6 +109,10 @@
 
 .btn:hover {
     transition: scale 0.3s ease-in-out;
+}
+
+.btn:hover span {
+        color: #000;
 }
 
 .box::after{

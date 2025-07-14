@@ -1,3 +1,7 @@
+body, html {
+    overflow-y: scroll;
+}
+
 .about-hero {
     display: flex;
     flex-wrap: wrap;
@@ -7,6 +11,14 @@
     background: #fff;
     color: #000;
 }
+
+.text{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1.5em;
+    margin-top: -0.5em;
+}
+
 
 .hero-text {
     flex: 1 1 400px;
