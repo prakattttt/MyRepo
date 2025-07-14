@@ -33,7 +33,7 @@
     <section class="form">
         <div class="container">
             <div class="form-box login">
-                <form action="info.php">
+                <form>
                     <h1>Login</h1>
                     <div class="input-box">
                         <input type="text" placeholder="Full Name" required>
@@ -50,7 +50,7 @@
                     <div class="forgot-link">
                         <a href="#">Forgot Password?</a>
                     </div>
-                    <button type="submit" class="butn"><a href="#">Login</a></button> 
+                    <button type="submit" class="butn" autocomplete="off">Login</button> 
                     <p>or login with special platforms</p>
                     <div class="links">
                         <a href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width=20" height="20" viewBox="0 0 50 50">
@@ -69,7 +69,7 @@
                 </form>
             </div>
             <div class="form-box register">
-                <form action="info.php">
+                <form>
                     <h1>Register</h1>
                     <div class="input-box">
                         <input type="text" placeholder="Full Name" required>
@@ -83,7 +83,7 @@
                         <input type="password" placeholder="Password" required>
                         <span class="material-symbols-outlined">lock</span>
                     </div>
-                    <button type="submit" class="butn"><a href="#">Register</a></button> 
+                    <button type="submit" class="butn" autocomplete="off"></button> 
                     <p>or register with special platforms</p>
                     <div class="links">
                         <a href="#"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width=20" height="20" viewBox="0 0 50 50">
@@ -105,17 +105,17 @@
                 <div class="toggle-panel toggle-left">
                     <h1>Hello Welcome!</h1>
                     <p>Don't have an account?</p>
-                    <button class="butn registerBtn"  onclick="toggleRegister()"><a href="#">Register</a></button>
+                    <button class="butn registerBtn"  onclick="toggleRegister()">Register</button>
                 </div>
                  <div class="toggle-panel toggle-right">
                     <h1>Welcome Back!</h1>
                     <p>Already have an account?</p>
-                    <button class="butn loginBtn"  onclick="toggleLogin()"><a href="#">Login</a></button>
+                    <button class="butn loginBtn"  onclick="toggleLogin()">Login</button>
                 </div>
             </div>
         </div>
     </section>
-</body>
 <script src="script.js"></script>
 <script src="loginscript.js"></script>
+</body>
 </html>

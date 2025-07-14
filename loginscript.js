@@ -22,3 +22,46 @@ function toggleLogin() {
     login.style.visibility = "visible";
     register.style.visibility = "hidden";
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const loginForm = document.querySelector('.login form');
+    const registerForm = document.querySelector('.register form');
+
+    loginForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const fullName = loginForm.querySelector('input[placeholder="Full Name"]').value;
+        const email = loginForm.querySelector('input[placeholder="Email"]').value;
+        const password = loginForm.querySelector('input[placeholder="Password"]').value;
+
+        const userData = {
+            fullName,
+            email,
+            password
+        };
+
+        localStorage.setItem('userLoginData', JSON.stringify(userData));
+        alert("Login data saved to localStorage!");
+        loginForm.reset();
+    });
+
+    registerForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const fullName = registerForm.querySelector('input[placeholder="Full Name"]').value;
+        const email = registerForm.querySelector('input[placeholder="Email"]').value;
+        const password = registerForm.querySelector('input[placeholder="Password"]').value;
+
+        const userData = {
+            fullName,
+            email,
+            password
+        };
+
+        localStorage.setItem('userRegisterData', JSON.stringify(userData));
+        alert("Register data saved to localStorage!");
+        registerForm.reset();
+    });
+});
+
+
