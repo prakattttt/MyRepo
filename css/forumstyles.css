@@ -95,6 +95,36 @@ body, html {
     color: #004d98;
 }
 
+.comment button {
+    padding: 0.4em 0.8em;
+    margin-left: 0.5em;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-family: "Quicksand", sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.comment button.edit-btn {
+    background-color: #c9302c;
+    color: #edbb00;
+}
+
+.comment button.edit-btn:hover {
+    color: #ffffff;
+}
+
+.comment button.delete-btn {
+    background-color: #004d98;
+    color: #edbb00;
+}
+
+.comment button.delete-btn:hover {
+    color: #ffffff;
+}
+
+
 @keyframes fadeIn {
     0% {opacity: 0;}
     100% {opacity: 1;}
