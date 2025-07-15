@@ -4,52 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Forum</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="forumstyles.css">
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/forumstyles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu0&icon_names=close0&icon_names=shopping_cart" />
 </head>
 <body>
     <nav>
         <div class="logo">
-            <img src="logo.png" alt="logo" id="logo">
+            <img src="/images/logo.png" alt="logo" id="logo">
         </div>
         <ul class="sidebar">
             <li><a onclick="hideSidebar()"><span class="material-symbols-outlined">close</span></a></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="forum.html">Forum</a></li>
-            <li><a href="login.html">Log In</a></li>
+            <li><a href="/html/index.html">Home</a></li>
+            <li><a href="/html/about.html">About Us</a></li>
+            <li><a href="/html/products.html">Products</a></li>
+            <li><a href="/html/forum.html">Forum</a></li>
+            <li><a href="/html/login.html">Log In</a></li>
         </ul>
         <ul class="navbar">
-            <li class="hide"><a href="index.html">Home</a></li>
-            <li class="hide"><a href="about.html">About Us</a></li>
-            <li class="hide"><a href="products.html">Products</a></li>
-            <li class="hide"><a href="forum.html">Forum</a></li>
-            <li class="hide"><a href="login.html">Log In</a></li>
+            <li class="hide"><a href="/html/index.html">Home</a></li>
+            <li class="hide"><a href="/html/about.html">About Us</a></li>
+            <li class="hide"><a href="/html/products.html">Products</a></li>
+            <li class="hide"><a href="/html/forum.html">Forum</a></li>
+            <li class="hide"><a href="/html/login.html">Log In</a></li>
             <li id="drop"><a onclick="showSidebar()"><span class="material-symbols-outlined">menu</span></a></li>
         </ul>
     </nav>
 
     <section class="forum-section">
-        <div class="container">
-            <h1>Community Forum</h1>
-            <p>Ask questions, get help, and engage with others in the community!</p>
-            <div class="forum-posts">
-                <div class="post">
-                    <h3>How do I set up my account?</h3>
-                    <p>Posted by <strong>User123</strong> • 2 hours ago</p>
-                </div>
-                <div class="post">
-                    <h3>How do i get notified about new releasing merch regurlarly?</h3>
-                    <p>Posted by <strong>Spinny234</strong> • 1 day ago</p>
-                </div>
-                <div class="post">
-                    <h3>Problem with adding multiple items to the shopping cart</h3>
-                    <p>Posted by <strong>HelpSeeker</strong> • 3 days ago</p>
-                </div>
-            </div>
-        </div>
+        <h1>Forum Section</h1>
     <div class="comment-box">
         <h2>Leave a Comment</h2>
         <form id="commentForm">
@@ -76,14 +59,14 @@
 <footer class="footer">
   <div class="footer-container">
     <div class="footer-logo">
-      <img src="logo.png" alt="logo">
+      <img src="/images/logo.png" alt="logo">
     </div>
     <div class="footer-links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="products.html">Products</a>
-      <a href="forum.html">Forum</a>
-      <a href="login.html">Login</a>
+      <a href="/html/index.html">Home</a>
+      <a href="/html/about.html">About</a>
+      <a href="/html/products.html">Products</a>
+      <a href="/html/forum.html">Forum</a>
+      <a href="/html/login.html">Login</a>
     </div>
     <div class="footer-social">
       <a href="#"><span class="material-symbols-outlined">public</span></a>
@@ -95,7 +78,7 @@
     <p>&copy; 2025 LM10. All rights reserved.</p>
   </div>
 </footer>
-    <script src="script.js"></script>
-    <script src="forumscript.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/forumscript.js"></script>
 </body>
 </html>
