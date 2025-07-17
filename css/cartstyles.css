@@ -1,0 +1,47 @@
+body {
+    padding: 0;
+}
+
+.back-button{
+    margin: 2em;
+}
+
+.back-button a{
+    text-decoration: none;
+    color: black;
+}
+
+.back-button .material-symbols-outlined {
+    position: relative;
+    top: 2px;
+}
+
+.back-button span {
+    font-size: 2rem;
+}
+
+.header {
+    text-align: center;
+    font-size: 2rem;
+    margin: 1.5em;
+}
+
+.contain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-box {
+    width: 60vw;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    position: relative;
+}
+
+li {
+    padding: 0.5em;
+    list-style-type: none;
+    font-size: 1.5rem;
+}

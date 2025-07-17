@@ -135,6 +135,32 @@ body, html {
     opacity: 1;
 }
 
+.butn {
+    margin-top: 1.5em;
+    background: linear-gradient(to right, #004d98 0%, #a8133e 50%, #004d98 100%);
+    color: #edbb00;
+    border: none;
+    padding: 0.8em 1.5em;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background 0.3s ease-in-out;
+    position: relative;
+    left: 45%;
+}
+
+.butn:hover, .butn:hover span{
+    font-weight: 600;
+    scale: 1.1;
+    transition: scale 0.5s ease;
+}
+
+.butn span {
+    position: relative;
+    top: 3px;
+    right: 3px;
+}
+
 @keyframes slideInLeft {
     0% {opacity: 0; transform: translateX(-100px);}
     100% {opacity: 1; transform: translateX(0);}
