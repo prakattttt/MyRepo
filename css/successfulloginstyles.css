@@ -1,0 +1,60 @@
+back-button{
+    margin: 2em;
+}
+
+.back-button a{
+    text-decoration: none;
+    color: black;
+}
+
+.back-button .material-symbols-outlined {
+    margin-left: 1rem;
+    position: relative;
+    top: 2px;
+}
+
+.back-button span {
+    font-size: 2rem;
+}
+
+.main {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main h1 {
+    font-size: 3rem;
+    border-radius: 30px;
+    padding: 1.5rem;
+}
+
+img {
+    height: 100%;
+}
+
+@media(max-width: 1050px) {
+    img {
+        height: 500px;
+    }
+}
+
+@media(max-width: 878px) {
+    img {
+        height: 350px;
+    }
+    .main h1 {
+        font-size: 2rem;
+    }
+}
+
+@media(max-width: 610px) {
+    img {
+        height: 200px;
+    }
+    .main h1 {
+        font-size: 1.54rem;
+    }
+}

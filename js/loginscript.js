@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         localStorage.setItem('userLoginData', JSON.stringify(userData));
-        alert("Login data saved to localStorage!");
+        window.location.href = "http://127.0.0.1:5500/html/successfulLogin.html";
         loginForm.reset();
     });
 
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         localStorage.setItem('userRegisterData', JSON.stringify(userData));
-        alert("Register data saved to localStorage!");
+        alert("Registered Successfully! Please login now.");
         registerForm.reset();
     });
 });
